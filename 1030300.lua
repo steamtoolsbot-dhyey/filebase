@@ -1,0 +1,8 @@
+-- ============================================
+--  Credits: K3rnelPan1c (KernelOS / !K3rnalyze)
+--  Discord: https://discord.gg/k3rnalyze
+--  Website: https://kernelos.org/games
+-- ============================================
+
+addappid(1030300)
+addappid(1030301,0,"f4a253f96969f93b8a9392cddf6f1b779886ea10a160e7ca148b92bae09abd28")
