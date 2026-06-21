@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Wormhole P2P</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- This file provides the user interface for the Wormhole P2P file transfer application -->
+        <div id="app">
+            <h1>Wormhole P2P</h1>
+            <div id="connection-panel">
+                <input
+                    type="text"
+                    id="room-id"
+                    placeholder="Enter Room ID (e.g., secret123)"
+                />
+                <button id="connect-btn">Connect</button>
+                <button id="open-btn" disabled>Open Wormhole</button>
+                <span id="status">Disconnected</span>
+            </div>
+
+            <div id="wormhole" class="wormhole idle">
+                <div class="tunnel"></div>
+                <!-- The file drop zone where users can drag and drop files for transfer -->
+                <div id="file-drop" class="drop-zone">
+                    Drop file here<br /><small>(Max 1GB)</small>
+                </div>
+            </div>
+
+            <div id="progress-container" style="display: none">
+                <progress id="progress" value="0" max="100"></progress>
+                <span id="progress-text">0%</span>
+            </div>
+
+            <div id="log"></div>
+        </div>
+        <script src="renderer.js"></script>
+    </body>
+</html>
